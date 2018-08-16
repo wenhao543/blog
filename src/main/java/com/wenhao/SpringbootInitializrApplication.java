@@ -1,4 +1,4 @@
-package com.wenhao.springbootinitializr;
+package com.wenhao;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

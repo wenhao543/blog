@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.wenhao</groupId>
-	<artifactId>springboot-initializr</artifactId>
+	<artifactId>springboot-blog</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>springboot-initializr</name>
+	<name>springboot-blog</name>
 	<description>Demo project for Spring Boot</description>
 
 	<parent>
