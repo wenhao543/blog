@@ -3,6 +3,8 @@ package com.wenhao.springbootinitializr;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
@@ -16,6 +18,8 @@ import org.springframework.web.context.WebApplicationContext;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class SpringbootInitializrApplicationTests {
+	
+	private Logger logger = LoggerFactory.getLogger(getClass());
 	
 	@Autowired
     private WebApplicationContext wac;
@@ -37,7 +41,7 @@ public class SpringbootInitializrApplicationTests {
                 .contentType(MediaType.APPLICATION_JSON_UTF8))
                 .andExpect(MockMvcResultMatchers.status().isOk())
                 .andReturn().getResponse().getContentAsString();
-        System.out.println(contentAsString);
+        logger.info(contentAsString);
     }
 
 }
