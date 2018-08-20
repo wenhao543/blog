@@ -1,4 +1,4 @@
-package com.wenhao.springbootinitializr;
+package com.wenhao;
 
 import org.junit.Before;
 import org.junit.Test;
